@@ -1,5 +1,9 @@
 public class TestBench {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Calculator c = new Calculator();
+        c.add(10.22);
+        c.subtract(2.22);
+        c.multiply(10);
+        c.divide(2);
     }
 }

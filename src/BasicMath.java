@@ -4,4 +4,5 @@ public interface BasicMath <N extends Number> {
     void multiply(N inputValue);
     void divide(N inputValue);
 
+
 }
