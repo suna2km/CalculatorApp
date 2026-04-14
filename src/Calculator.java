@@ -9,13 +9,13 @@ public class Calculator <N extends Number> implements BasicMath <N> {
         System.out.println("Calculator is on");
         clear();
     }
-        public void clear () {
-            previousValue = 0;
-            inputValue = 0;
-            currentValue = 0;
-            operator = '+';
-            System.out.println("Calculator cleared");
-        }
+    public void clear () {
+        previousValue = 0;
+        inputValue = 0;
+        currentValue = 0;
+        operator = '+';
+        System.out.println("Calculator cleared");
+    }
 
 
     @Override
@@ -60,9 +60,4 @@ public class Calculator <N extends Number> implements BasicMath <N> {
         System.out.println();
 
     }
-
-
-
-
-
 }
