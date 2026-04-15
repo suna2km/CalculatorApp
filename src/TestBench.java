@@ -1,6 +1,6 @@
 public class TestBench {
     public static void main(String[] args) {
-        Calculator c = new Calculator();
+        MemoryCalc c = new MemoryCalc();
         c.add(10.22);
         c.subtract(2.22);
         c.multiply(10);
