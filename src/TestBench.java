@@ -5,5 +5,13 @@ public class TestBench {
         c.subtract(2.22);
         c.multiply(10);
         c.divide(2);
+        c.memoryAdd();
+        c.memoryAdd();
+        c.memoryAdd();
+
+        c.memorySubtract();
+        c.add(c.getMemoryValue());
+        c.memoryClear();
+        c.clear();
     }
 }
