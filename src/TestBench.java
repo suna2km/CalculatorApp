@@ -1,17 +1,19 @@
 public class TestBench {
     public static void main(String[] args) {
-        MemoryCalc c = new MemoryCalc();
-        c.add(10.22);
-        c.subtract(2.22);
-        c.multiply(10);
-        c.divide(2);
-        c.memoryAdd();
-        c.memoryAdd();
-        c.memoryAdd();
 
-        c.memorySubtract();
-        c.add(c.getMemoryValue());
-        c.memoryClear();
-        c.clear();
+        AdvanceCalc advCalc = new AdvanceCalc();
+
+        advCalc.add(10.22);
+        advCalc.subtract(2.22);
+        advCalc.memoryAdd();
+        advCalc.multiply(10);
+        advCalc.memorySubtract();
+        advCalc.divide(2);
+        advCalc.setPrecision(4);
+        advCalc.pow(2);
+        advCalc.sqrt();
+        advCalc.add(advCalc.getMemoryValue());
+        advCalc.memoryClear();
+        advCalc.clear();
     }
 }
