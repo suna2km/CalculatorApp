@@ -8,6 +8,7 @@ https://youtu.be/eVGEea7adDM?si=cz1Fbqxr9VgioIEh
 <b>Table of Content</b>
 - [Summary](#summary)
 - [How the Program Works](#how-the-program-works)
+- [UML Diagram](#uml-diagram)
 - [Console Output Example](#console-output-testing-example)
 - [New Concepts](#new-concepts)
 - [Maintainers](#maintainers)
@@ -48,6 +49,8 @@ abstraction, and generics to demonstrate modular and reusable code design.
       - Add to memory 
       - Subtract from memory 
       - Retrieve memory value
+## UML Diagram
+![UML Diagram](Calculator_UML_Diagram.jpg)
 ## Console Output Testing Example
 ```
 Calculator is on
