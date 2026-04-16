@@ -14,9 +14,40 @@ https://youtu.be/eVGEea7adDM?si=cz1Fbqxr9VgioIEh
 
 
 ## Summary
-
+This app implements an advanced calculator using object-oriented programming principles in Java.
+The calculator supports basic arithmetic operations, memory functionality, and advanced mathematical
+operations such as exponentiation and square root. The program is designed using interfaces, inheritance,
+abstraction, and generics to demonstrate modular and reusable code design.
 ## How the Program Works
+1. Basic Operations
+- Defined in the BasicMath interface:
 
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+
+    These operations are implemented in the abstract Calculator class.
+2. Advanced Operations
+- Extends MemoryCalc and implements AdvanceMath:
+
+    - Square root operation
+    - Power (exponentiation)
+    - Custom display precision (0–10 decimal places)
+3. Calculator
+- Stores values such as currentValue, previousValue, and inputValue
+- Implements all basic math operations
+- Provides a default display format
+- Serves as the base class for all calculators
+4. Memory Functionality (MemoryCalc)
+- Extends Calculator and adds:
+
+    - Memory storage (memoryValue)
+    - Memory operations:
+      - Clear memory 
+      - Add to memory 
+      - Subtract from memory 
+      - Retrieve memory value
 ## Console Output Testing Example
 ```
 Calculator is on
@@ -66,7 +97,28 @@ Calculator cleared
 
 ```
 ## New Concepts
+- Generics < N extends Number >
 
+    - Allows the calculator to accept different numeric types (e.g., Integer, Double) 
+    while maintaining flexibility.
+
+- Interfaces
+
+    - BasicMath and AdvanceMath define required behaviors
+    - Promote abstraction and enforce method implementation
+- Inheritance
+
+    - MemoryCalc extends Calculator
+    - AdvanceCalc extends MemoryCalc
+    - Enables code reuse and hierarchical design
+- Method Overriding
+
+    - AdvanceCalc overrides display methods to support custom precision
+    - Demonstrates polymorphism
+- Abstraction
+
+    - Calculator is an abstract class
+    - Hides implementation details while exposing essential functionality
 ## Maintainers
 [@suna2km](https://github.com/suna2km) Suna Aregay                                                                                                                        
 [Back to Top](#calculator-app)
