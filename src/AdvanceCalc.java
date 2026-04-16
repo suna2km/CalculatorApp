@@ -2,6 +2,8 @@
  * Advanced calculator that extends memory functionality
  * and adds advanced mathematical operations.
  *
+ * @author Suna Aregay
+ * @see <a href="{https://github.com/suna2km/CalculatorApp</a>
  * @param <N> a numeric type that extends Number
  */
 public class AdvanceCalc <N extends Number> extends MemoryCalc implements AdvanceMath<N> {

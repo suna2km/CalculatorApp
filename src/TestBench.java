@@ -1,3 +1,9 @@
+/**
+ * Class for testing the program
+ *
+ * @author Suna Aregay
+ * @see <a href="{https://github.com/suna2km/CalculatorApp</a>
+ */
 public class TestBench {
     public static void main(String[] args) {
 

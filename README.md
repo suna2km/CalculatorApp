@@ -50,7 +50,7 @@ abstraction, and generics to demonstrate modular and reusable code design.
       - Subtract from memory 
       - Retrieve memory value
 ## UML Diagram
-![UML Diagram](Calculator_UML_Diagram.jpg)
+![UML Diagram](Calculator_UML_Diagram.jpg) 
 ## Console Output Testing Example
 ```
 Calculator is on

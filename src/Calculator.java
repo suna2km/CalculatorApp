@@ -4,6 +4,7 @@
  * and maintains the calculator state.
  *
  * @author Suna Aregay
+ * @see <a href="{https://github.com/suna2km/CalculatorApp</a>
  * @param <N> a numeric type that extends Number
  */
 public abstract class Calculator <N extends Number> implements BasicMath <N> {

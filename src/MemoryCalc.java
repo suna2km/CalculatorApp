@@ -2,6 +2,7 @@
  * Extends the Calculator class to provide memory functionality.
  *
  * @author Suna Aregay
+ * @see <a href="{https://github.com/suna2km/CalculatorApp</a>
  */
 public class MemoryCalc extends Calculator{
 
