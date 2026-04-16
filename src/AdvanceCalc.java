@@ -1,12 +1,26 @@
+/**
+ * Advanced calculator that extends memory functionality
+ * and adds advanced mathematical operations.
+ *
+ * @param <N> a numeric type that extends Number
+ */
 public class AdvanceCalc <N extends Number> extends MemoryCalc implements AdvanceMath<N> {
 
+    /** Defines the number of decimal places for display */
     protected int precision;
 
+    /**
+     * Default constructor initializes precision to 4.
+     */
     public AdvanceCalc() {
         super();
         setPrecision(4);
     }
 
+    /**
+     * Sets the display precision.
+     * @param precision number of decimal places (0–10)
+     */
     public void setPrecision(int precision) {
         if (precision < 0 || precision > 10)
             throw new IllegalArgumentException("Precision must be between 0 and 10");
@@ -15,6 +29,7 @@ public class AdvanceCalc <N extends Number> extends MemoryCalc implements Advanc
         System.out.println("Calculator precision is " + precision + " decimal places.");
     }
 
+    /** Performs square root on the current value. */
     @Override
     public void sqrt() {
         operator = '\u221A';
@@ -24,6 +39,10 @@ public class AdvanceCalc <N extends Number> extends MemoryCalc implements Advanc
         updateDisplay();
     }
 
+    /**
+     * Raises the current value to the given power.
+     * @param inputValue exponent value
+     */
     @Override
     public void pow(N inputValue) {
         operator = '^';
@@ -32,6 +51,7 @@ public class AdvanceCalc <N extends Number> extends MemoryCalc implements Advanc
         updateDisplay();
     }
 
+    /** Overrides display to use custom precision. */
     @Override
     public void updateDisplay(){
         String format1 =" %,12." + precision +"f%n"; //used to display just one value
@@ -50,6 +70,10 @@ public class AdvanceCalc <N extends Number> extends MemoryCalc implements Advanc
 
     }
 
+    /**
+     * Displays memory value with custom precision.
+     * @param phrase description of operation
+     */
     @Override
     public void displayMemoryValue(String phrase){
         String format3 ="%-15s %,12." + precision +"f%n";
