@@ -94,7 +94,6 @@ Using memory value
 Memory Cleared        0.0000
 
 Calculator cleared
-
 ```
 ## New Concepts
 - Generics < N extends Number >
